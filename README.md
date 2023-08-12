@@ -15,13 +15,14 @@ A brief description of what this project does and who it's for
 <img width="1438" alt="Screenshot 2023-08-12 at 10 48 00 PM" src="https://github.com/AAYUSH-droid/Library-Management-System/assets/76835619/5be83714-8b84-428c-8f6b-3a30f5a0dbbc">
 
 ### Add Transaction Details
-<img width="1406" alt="Screenshot 2023-08-12 at 8 19 14 PM" src="https://github.com/AAYUSH-droid/Library-Management-System/assets/76835619/70a24341-14e9-4ea4-8e2f-5fc6ed71f191">
+<img width="1400" alt="Screenshot 2023-08-12 at 10 49 02 PM" src="https://github.com/AAYUSH-droid/Library-Management-System/assets/76835619/526fbf73-23df-4273-b9bb-61ac4766eb5d">
 
 ### Add Member Details
-<img width="1319" alt="Screenshot 2023-08-12 at 8 19 53 PM" src="https://github.com/AAYUSH-droid/Library-Management-System/assets/76835619/37869daf-b639-4fd1-a4ac-a1f74434778e">
+<img width="1375" alt="Screenshot 2023-08-12 at 10 49 14 PM" src="https://github.com/AAYUSH-droid/Library-Management-System/assets/76835619/87351773-954f-46b8-9795-b1ed94a00578">
 
 ### Add Book Details
-<img width="1399" alt="Screenshot 2023-08-12 at 8 20 03 PM" src="https://github.com/AAYUSH-droid/Library-Management-System/assets/76835619/27a997ea-7c0b-4cb2-a9d4-3e335e8c6257">
+<img width="1376" alt="Screenshot 2023-08-12 at 10 49 24 PM" src="https://github.com/AAYUSH-droid/Library-Management-System/assets/76835619/cef7b73b-215e-4a1d-a0b3-552d2448b979">
 
 ### Search Funtionality
-<img width="1433" alt="Screenshot 2023-08-12 at 8 20 28 PM" src="https://github.com/AAYUSH-droid/Library-Management-System/assets/76835619/deb60645-d4cc-41eb-97e2-beae6f057726">
+<img width="1439" alt="Screenshot 2023-08-12 at 10 49 43 PM" src="https://github.com/AAYUSH-droid/Library-Management-System/assets/76835619/e40001ac-7fbb-4941-a471-5185459e5ddc">
+
