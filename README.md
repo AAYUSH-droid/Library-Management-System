@@ -1,6 +1,6 @@
 # Library Management System
 
-A brief description of what this project does and who it's for
+Library Management Web Application made using MySQL and .Django
 
 #### Home Page
 <img width="1342" alt="Screenshot 2023-08-12 at 10 46 59 PM" src="https://github.com/AAYUSH-droid/Library-Management-System/assets/76835619/96571ef6-e42c-43b3-a976-8b9ccecbc553">
