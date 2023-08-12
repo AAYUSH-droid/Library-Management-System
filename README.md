@@ -3,7 +3,7 @@
 A brief description of what this project does and who it's for
 
 #### Home Page
-<img width="1302" alt="Screenshot 2023-08-12 at 8 17 30 PM" src="https://github.com/AAYUSH-droid/Library-Management-System/assets/76835619/6fbad591-dcba-411a-bd98-0d440bc97a94">
+<img width="1342" alt="Screenshot 2023-08-12 at 10 46 59 PM" src="https://github.com/AAYUSH-droid/Library-Management-System/assets/76835619/96571ef6-e42c-43b3-a976-8b9ccecbc553">
 
 ### Book Details 
 <img width="1433" alt="Screenshot 2023-08-12 at 8 18 01 PM" src="https://github.com/AAYUSH-droid/Library-Management-System/assets/76835619/565b2a26-fc9e-4c2b-a4da-fd06262d25c9">
