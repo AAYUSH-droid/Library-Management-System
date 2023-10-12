@@ -1,0 +1,33 @@
+{% extends 'base.html' %} {% block body %}
+<h3
+  style="
+    margin-top: 10px;
+    text-align: center;
+    margin-right: 70px;
+    color: rgb(208, 99, 36);
+  "
+>
+  Delete Member
+</h3>
+
+<div
+  class="good-coder"
+  style="
+    background-color: rgb(89, 89, 235);
+    margin-left: 150px;
+    margin-right: 200px;
+    margin-bottom: 20px;
+  "
+>
+  <p>Are you sure you want to delete "{{ member.name }}"?</p>
+  <form
+    method="post"
+    style="box-shadow: inset; margin-top: 20px; margin-left: 400px"
+  >
+    {% csrf_token %}
+
+    <button type="submit" class="btn btn-danger">Delete</button>
+    <a href="{% url 'home' %}" class="btn btn-secondary">Cancel</a>
+  </form>
+</div>
+{% endblock %}

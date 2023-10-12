@@ -17,5 +17,7 @@ urlpatterns = [
     path("transactionform/", Transactionview.as_view(), name='transactionformm'),
     path("edit/data/<int:id>/", views.edit_data, name='edit_data'),
     path("delete_data/<int:id>/", views.post_delete, name='delete_data'),
-    path('search-blogs/', views.BlogSearchView.as_view(), name='search_blogs')
+    path('search-blogs/', views.BlogSearchView.as_view(), name='search_blogs'),
+    path("edit_member/<str:email>/", views.edit_member , name='edit_member'),
+    path('delete_member/<str:email>/', views.delete_member, name='delete_member')
 ]

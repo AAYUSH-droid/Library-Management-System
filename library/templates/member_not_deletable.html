@@ -1,0 +1,21 @@
+{% extends 'base.html' %} {% block body %}
+<h3 style="text-align: center; color: rgb(208, 99, 36)">
+  Member Cannot Be Deleted
+</h3>
+
+<div
+  class="good-coder"
+  style="
+    background-color: rgb(241, 241, 247);
+    margin-left: 150px;
+    margin-right: 200px;
+    margin-bottom: 20px;
+  "
+>
+  <p>
+    The member "{{ member.name }}" cannot be deleted because their outstanding
+    debt is more than Rs. 500.
+  </p>
+  <a href="{% url 'home' %}" class="btn btn-secondary">Back to Home</a>
+</div>
+{% endblock %}

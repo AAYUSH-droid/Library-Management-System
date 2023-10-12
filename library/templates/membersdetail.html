@@ -1,7 +1,7 @@
 {% extends 'base.html' %} {% block body %}
 
 <h3 style="text-align:center;color:rgb(8, 8, 7); font-size:40px;"><b>
-        <marquee direction="left"  behavior="alternate" scrollamount="20" >Members Details</marquee>
+        <div>Members Details</div>
     </b></h3>
 <table class="table" border="1">
     <thead style="color:rgb(6, 6, 7); text-align: center; font-size: 19px; font-style:Serif;">
@@ -17,10 +17,13 @@
             <td>{{data.name}}</td>
             <td>{{data.email}}</td>
             <td>{{data.outstanding_debt}}</td>
-                {% comment %} <a href="{% url 'edit_data' id=book.id %}" style="margin-right: 9px; "><span class="btn btn-info">update</span></a><br>
-                <a href="{% url 'delete_data' id=book.id %}" style="margin-left:4px; "><span class="btn btn-danger"
-                        onclick="return confirm('are you sure')">delete</span></a> {% endcomment %}
+        <td>
+            <a href="{% url 'edit_member' email=data.email%}" style="margin-right: 9px; "><span class="btn btn-info">update</span></a><br>
+        </td>
+        <td>
+            <a href="{% url 'delete_member' email=data.email %}" style="margin-left:4px; "><span class="btn btn-danger">delete</span></a>
             </td>
+        </td>
         </tr>
     </tbody>
     {% endfor%}

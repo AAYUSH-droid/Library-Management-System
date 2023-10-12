@@ -22,7 +22,7 @@ def indexx(request):
 def import_books(reqeust):
     response = requests.get('https://frappe.io/api/method/frappe-library?page=1&title=and')
     books = response.json()['message']
-    print(books)
+    # print(books)
     # for num_pages in books[:20]:
     for book in books[:20]:
         book_id = book['bookID']
@@ -95,11 +95,13 @@ class Transactionview(SuccessMessageMixin, CreateView):
     # success_message = 'Transaction has been successfuly !!'
     success_url = reverse_lazy('transactionlist')
    
+#delete a book
 def post_delete(request, id):
     data = get_object_or_404(Book, id=id)
     data.delete()
     return redirect('home')
 
+# edit book info
 def edit_data(request, id):
     post_data = get_object_or_404(Book, id=id)
     if request.method == 'POST':
@@ -112,6 +114,42 @@ def edit_data(request, id):
         myinfo = {"form_data": form_data}
     return render(request, 'bookformedit.html', context=myinfo)
 
+#edit a member info
+def edit_member(request, email):
+    member = get_object_or_404(Member, email = email)
+
+    if request.method == 'POST':
+        form = Memberform(request.POST, instance=member)
+        if form.is_valid():
+            form.save()
+            return redirect('home')
+    else:
+        form = Memberform(instance=member)
+
+    context = {
+        # 'form': form,
+        # 'member': member,
+         'form_data': form,
+    }
+
+    return render(request, 'edit_member.html', context)
+
+# delete a member
+def delete_member(request, email):
+    member = get_object_or_404(Member, email=email)
+    if request.method == 'POST':
+        if member.outstanding_debt <= 500:
+            member.delete()
+            return redirect('home')
+    else:
+         # Render a template for not allowing the deletion due to outstanding debt
+        return render(request, 'member_not_deletable.html', {'member': member})
+
+    context = {
+        'member': member,
+    }
+    
+    return render(request, 'delete_member.html', context)
 
 class BlogSearchView(ListView):
     model = Book
